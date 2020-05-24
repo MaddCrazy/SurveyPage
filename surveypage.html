@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  body {
+  background-color: #9E71F7;
+  font-family: "Lucida Console";
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 0px;
+}
+
+#description {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+#enter-name {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+#first-name {
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 0px;
+}
+
+#enter-email {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#email {
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 0px;
+}
+
+#enter-gender {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#enter-current-pet {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#enter-favourite-pet {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#enter-past-pet {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#enter-comment {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#comment {
+  margin-bottom: 0px;
+}
+
+#submit {
+  margin-top: 17px;
+  width: 70px;
+  height: 20px;
+}
+</style>
+
+
+<title>Survey Page about Pets</title>
+<body>
+  <h1 id="title">Pet Survey</h1>
+  <p id="description">Thank you for taking this short survey about your pets.</p>
+  
+  <form id="survey-form">
+    <div id="name-div">
+      <p id="enter-name">Please enter your first name only.</p>
+      <label id="name-label" for="first-name">First name</label>
+      <input type="text" required id="first-name" placeholder="First Name">
+    </div>
+
+    <div id="email-div">
+      <p id="enter-email">Please enter your email.</p>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="name@mail.com" required>
+    </div>
+
+    <div id="gender-div">
+      <p id="enter-gender">Please select your gender.</p>
+      <label for="female">
+        <input type="radio" id="female" name="gender" required>Female
+      </label>
+      <label for="male">
+        <input type="radio" id="male" name="gender">Male
+      </label>
+      <label for="other">
+        <input type="radio" id="other" name="gender">Other
+      </label>
+    </div>   
+
+    <div id="form-div">
+      <p id="enter-current-pet">What is the total number of pets you have now?</p>
+      <label id="number-label" for="pet-number">Number of pets</label>
+      <input type="number" id="pet-number" placeholder="0" min="0" mix="999" required>
+      
+      <p id="enter-favourite-pet">What is your favourite kind of pet?</p>
+      <select id="dropdown"name="favourite-pet" required>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Hamster">Hamster</option>
+        <option value="Rabbit">Rabbit</option>
+        <option value="Bird">Bird</option>
+        <option value="Fish">Fish</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <p id="enter-past-pet">Please select which pets you have had in the past.</p>
+      <label for="dog">
+        <input type="checkbox" id="dog" name="past-pet">Dog
+      </label>
+      <label for="cat">
+        <input type="checkbox" id="cat" name="past-pet">Cat
+      </label>
+      <label for="Hamster">
+        <input type="checkbox" id="Hamster" name="past-pet">Hamster
+      </label>
+      <label for="Rabbit">
+        <input type="checkbox" id="rabbit" name="past-pet">Rabbit
+      </label>
+      <label for="Bird">
+        <input type="checkbox" id="bird" name="past-pet">Bird
+      </label>
+      <label for="Fish">
+        <input type="checkbox" id="fish" name="past-pet">Fish
+      </label>
+
+      <p id="enter-comment">Additional Comments:</p>
+      <textarea id="comment" rows="3" cols="25" placeholder="Click to edit"></textarea>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
